@@ -1,11 +1,11 @@
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 import App from './App.vue';
-import About from './pages/About.vue';
-import Contact from './pages/Contact.vue';
-import Post from './pages/Post.vue';
-import Article from './pages/Article.vue';
-import Counter from './pages/Counter.vue';
+import AboutPage from './pages/AboutPage.vue';
+import ContactPage from './pages/ContactPage.vue';
+import PostPage from './pages/PostPage.vue';
+import ArticlePage from './pages/ArticlePage.vue';
+import CounterPage from './pages/CounterPage.vue';
 import { createStore } from 'vuex';
 
 const router = createRouter({
@@ -13,24 +13,24 @@ const router = createRouter({
     routes: [
         {
             path: '/about',
-            component: About,
+            component: AboutPage,
         },
         {
             path: '/contact',
-            component: Contact,
+            component: ContactPage,
         },
         {
             path: '/post/:id',
-            component: Post,
+            component: PostPage,
         },
         {
             path: '/article/:id',
-            component: Article,
+            component: ArticlePage,
             props: true,
         },
         {
             path: '/counter',
-            component: Counter,
+            component: CounterPage,
         },
     ],
 });
